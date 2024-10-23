@@ -9,7 +9,6 @@ arcpy.env.overwriteOutput = True
 # Path to Roads.shp
 road_path = "Roads.shp"
 road_types_string = "0;201;203"
-road_types_list = road_types_string.split(';')
 
 # iterate through road types
 for road in road_types_string.split(';'):
