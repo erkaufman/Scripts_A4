@@ -20,7 +20,7 @@ arcpy.AddMessage(f"YMax: {round(desc.extent.YMax, 1)}")
 # Check dataset type and execute command accordingly
 if desc.datasetType == 'FeatureClass':
     arcpy.AddWarning(f"ShapeType: {desc.shapeType}") # arcpy.AddWarning()
-if desc.datasetType == 'RasterDataset':
+elif desc.datasetType == 'RasterDataset':
     arcpy.AddWarning(f"Format: {desc.format}\
           # of rows: {desc.height}\
           # of cols: {desc.width}")
