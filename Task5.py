@@ -21,4 +21,4 @@ for row in rows:
     if recShape.contains(obsPoint) == True:
         # Attribute value of the field specified by the user
         uservalue = row[1]
-        arcpy.AddMessage(f'The point is within {uservalue} county.') 
+        arcpy.AddMessage(f'The point is within {uservalue} county.')
